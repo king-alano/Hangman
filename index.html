@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hangman</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="Media/Images/favicon.png">
+</head>
+
+<body>
+  <div id = "playAgain">
+    <span onclick = "location.reload();" id = "yes">Play Again?</span>
+  </div>
+  <div id="gameboard">
+    <h1 id = "title">HANGMAN</h1>
+    <div id="top">
+      <div id="hangman"></div>
+      <div id="letters">
+        <div class="letterRow">
+          <button onclick="guess('A');" id="A" class="letter">A</button>
+          <button onclick="guess('B');" id="B" class="letter">B</button>
+          <button onclick="guess('C');" id="C" class="letter">C</button>
+          <button onclick="guess('D');" id="D" class="letter">D</button>
+          <button onclick="guess('E');" id="E" class="letter">E</button>
+          <button onclick="guess('F');" id="F" class="letter">F</button>
+        </div>
+        <div class="letterRow">
+          <button onclick="guess('G');" id="G" class="letter">G</button>
+          <button onclick="guess('H');" id="H" class="letter">H</button>
+          <button onclick="guess('I');" id="I" class="letter">I</button>
+          <button onclick="guess('J');" id="J" class="letter">J</button>
+          <button onclick="guess('K');" id="K" class="letter">K</button>
+          <button onclick="guess('L');" id="L" class="letter">L</button>
+        </div>
+        <div class="letterRow">
+          <button onclick="guess('M');" id="M" class="letter">M</button>
+          <button onclick="guess('N');" id="N" class="letter">N</button>
+          <button onclick="guess('O');" id="O" class="letter">O</button>
+          <button onclick="guess('P');" id="P" class="letter">P</button>
+          <button onclick="guess('Q');" id="Q" class="letter">Q</button>
+          <button onclick="guess('R');" id="R" class="letter">R</button>
+        </div>
+        <div class="letterRow">
+          <button onclick="guess('S');" id="S" class="letter">S</button>
+          <button onclick="guess('T');" id="T" class="letter">T</button>
+          <button onclick="guess('U');" id="U" class="letter">U</button>
+          <button onclick="guess('V');" id="V" class="letter">V</button>
+        </div>
+        <div class="letterRow">
+          <button onclick="guess('W');" id="W" class="letter">W</button>
+          <button onclick="guess('X');" id="X" class="letter">X</button>
+          <button onclick="guess('Y');" id="Y" class="letter">Y</button>
+          <button onclick="guess('Z');" id="Z" class="letter">Z</button>
+        </div>
+      </div>
+    </div>
+    <div id="hint"></div>
+    <div id="word"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
